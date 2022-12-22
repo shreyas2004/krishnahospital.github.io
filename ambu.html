@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive hospital website design </title>
+
+    <!-- font awesome cdn link  -->
+      <link rel="stylesheet" href="all.min.css"> 
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    	function moveambu()
+    	{	
+    		
+    		with(document.forms.f1)
+    		{
+    		document.forms.f1.am.src="callnow.gif"
+    		am.height=250
+    		am.width=300
+    		}
+
+    	}	
+    	function dontmove()
+    	{
+			with(document.forms.f1)
+    		{
+    		am.src="ambulance.gif"
+    		am.height=300
+    		am.width=350
+    		}
+    	}
+    	function openwin()
+    	{
+    		window.open("index.html")
+    	}
+
+    		
+    </script>
+</head>
+
+<body>
+
+
+<form name="f1" >
+
+
+<section class="ambu" id="ambu">
+
+    <h1 class="heading"> <span>We provide free ambulance service 24/7 dial 911</span> </h1>
+
+    <div class="row">
+
+
+        <div class="content">
+          <center><img src="ambulance.gif" height="300" width="350" name="am" onmouseover="moveambu()" onmouseout="dontmove()" onclick="openwin()"></center> 
+           <!-- <p>Krishna Hospital and Medical Research Centre, Karad had a modest beginning with 200 beds hospital in one of the remotest areas in southern Maharashtra in the year 1982. Over the span of last 3 and a half decades the hospital has grown to an 1125 beds multi-specialty hospital</p> -->
+            
+         <!--    <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a> -->
+        </div>
+
+    </div>
+
+</section>
+</form>
+</body>
+
+</html>
